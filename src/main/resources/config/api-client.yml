@@ -1,0 +1,39 @@
+spring:
+ messages:
+    basename: messages
+ application:
+  name: api-client 
+ datasource:
+  url: jdbc:mysql://localhost:3306/db_core
+  #url: jdbc:mysql://${DATABASE_HOST}/${DATABASE_NAME}?autoReconnect=true&useSSL=false  
+  #username: ${DATABASE_USER}
+  username: root
+  #password: ${DATABASE_PASSWORD}
+  password: root
+ jpa:
+  show-sql: true
+  hibernate:
+   dialect: org.hibernate.dialect.MySQL5Dialect
+   ddl-auto: none
+   use-new-id-generator-mappings: false
+ jackson:
+  serialization:
+   fail-on-empty-beans: false
+ #security:
+  #user:
+   #name: admin
+   #password: admin
+          
+ 
+#Server Port
+server:
+ port: 8080
+ 
+ 
+ 
+#management:
+  #endpoints:
+    #web:
+      #exposure:
+        #include: "*"
+          
